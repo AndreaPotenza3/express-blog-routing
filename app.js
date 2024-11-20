@@ -11,7 +11,7 @@ app.use("/posts", postsRouter)
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.send('il server funziona')
+    res.send('il server del blog')
 })
 
 app.listen(() => {
