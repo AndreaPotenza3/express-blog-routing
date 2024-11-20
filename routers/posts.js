@@ -12,7 +12,8 @@ router.get('/', (req, res) => {
 // Show
 
 router.get('/:id', (req, res) => {
-    res.send(`Ecco il post con id ${req.params.id}`)
+    const id = req.params.id
+    res.send(`Ecco il post con id ${id}`)
 })
 
 // Store
@@ -24,19 +25,22 @@ router.post('/', (req, res) => {
 // Update
 
 router.put('/:id', (req, res) => {
-    res.send(`Aggiornato il post con id ${req.params.id}`)
+    const id = req.params.id
+    res.send(`Aggiornato il post con id ${id}`)
 })
 
 // Modify
 
 router.patch('/:id', (req, res) => {
-    res.send(`Modificato il post con id ${req.params.id}`)
+    const id = req.params.id
+    res.send(`Modificato il post con id ${id}`)
 })
 
 // Delete
 
 router.delete('/:id', (req, res) => {
-    res.send(`Cancellazione post con id ${req.params.id}`)
+    const id = req.params.id
+    res.send(`Cancellazione post con id ${id}`)
 })
 
 module.exports = router
