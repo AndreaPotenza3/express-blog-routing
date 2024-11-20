@@ -14,6 +14,6 @@ app.get('/', (req, res) => {
     res.send('il server del blog')
 })
 
-app.listen(() => {
+app.listen(port, () => {
     console.log(`Server listening on port ${port}`)
 })

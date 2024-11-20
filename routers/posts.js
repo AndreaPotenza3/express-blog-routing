@@ -1,6 +1,7 @@
 
 const express = require('express')
 const router = express.Router()
+const postsList = require('./posts')
 
 // Index
 
@@ -14,7 +15,7 @@ router.get('/:id', (req, res) => {
     res.send(`Ecco il post con id ${req.params.id}`)
 })
 
-// Create
+// Store
 
 router.post('/', (req, res) => {
     res.send('Creazione del post')
